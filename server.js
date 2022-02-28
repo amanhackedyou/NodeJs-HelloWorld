@@ -8,6 +8,6 @@ const server = http.createServer((req, res) => {
     res.end(frontEnd);
 });
 
-server.listen("8080", "0.0.0.0", () => {
+server.listen(process.env.PORT || 5000, "0.0.0.0", () => {
     console.log("Server Started...");
 });
